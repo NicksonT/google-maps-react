@@ -44,6 +44,7 @@ export class Marker extends React.Component {
         this.renderMarker();
     }
     if (this.props.shouldRender) {
+      console.log("HIT!")
       this.marker.setMap(null)
       this.renderMarker()
     }
