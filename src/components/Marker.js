@@ -43,6 +43,10 @@ export class Marker extends React.Component {
         }
         this.renderMarker();
     }
+    if (this.props.shouldRender) {
+      this.marker.setMap(null)
+      this.renderMarker()
+    }
   }
 
   componentWillUnmount() {
